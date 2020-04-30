@@ -18,7 +18,7 @@ class Emailer():
     template_name = None
     
     def __init__(self, subject="", template_name=None, context={}, template_html=None, to_emails=None, test_send=False):
-        if template_name == None and template_name == None:
+        if template_name == None and template_html == None:
             raise Exception("You must set a template")
         assert isinstance(to_emails, list)
         self.to_emails = to_emails
